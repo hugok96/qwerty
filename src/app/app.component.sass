@@ -1,0 +1,106 @@
+main
+  display: flex
+  flex-direction: column
+  height: 100vh
+  justify-content: start
+  text-align: center
+
+  h1
+    font-size: 3rem
+    margin-bottom: 0
+
+  p
+    font-size: 1.5rem
+
+  #type-display
+    margin: 1rem
+    padding: 1rem
+    background: black
+    border-radius: 1rem
+    border: 1px solid #252525
+    color: #00dad9
+    position: relative
+    text-align: left
+    word-break: break-all
+
+    span
+      font-size: 1.5rem
+      line-height: 1.75rem
+
+      //noinspection CssInvalidPropertyValue
+      &.revealed
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: 1rem
+        z-index: 1
+        pointer-events: none
+        filter: blur(1px)
+        mix-blend-mode: screen
+        mix-blend-mode: plus-lighter
+
+      &.total
+        color: #595959
+
+
+  #type-input
+    display: flex
+    margin: 2rem 5rem
+
+    input
+      flex-grow: 1
+      background: black
+      border-radius: 1rem
+      border: 1px solid #0e7275
+      outline: none
+      color: #259ca0
+      font-size: 2rem
+      padding: 1rem
+
+    button
+      margin-left: 1rem
+      padding: 0 2rem
+      background: black
+      color: #b0b0b0
+      border: 1px solid #252525
+      border-radius: 1rem
+
+  #type-time
+    font-size: 2rem
+
+
+  .flex-spacer
+    flex-grow: 1
+
+
+.challenges
+  h2
+    margin-top: 5rem
+    color: #b0b0b0
+    text-align: left
+
+  .links
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 1rem
+    margin-top: 1rem
+
+    a
+      min-width: 15rem
+      max-width: 20rem
+      flex-grow: 1
+      height: 10rem
+      background: black
+      border: 1px solid grey
+      border-radius: 1rem
+      color: grey
+      overflow: hidden
+      padding: 0.5rem
+      box-sizing: border-box
+      font-size: 1.25rem
+      cursor: pointer
+      text-align: left
+      margin-bottom: 1rem
